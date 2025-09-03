@@ -13,75 +13,79 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '',
 
-  USERS: [
+   USERS: [
     {
-      // 想要发送的人的名字
+      // 想要发送的人的名字（来自你的原配置）
       name: '小阳',
-      PROVINCE: '河南',
-      CITY: '商丘',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      // 使用其他通道时，请严格按照各个通道的教程进行填写
       id: 'oxffX15XOZ5_Fcv7fUg41XOXyix0',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
+      // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
       useTemplateId: 'x3QJviU9qu2jUj3_V4DMXbzc6nc-ZTiy-o9jzt0jFu8',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      // 所在省份或城市（从你的全局配置沿用）
+      province: '河南',
+      // 所在城市或县区
+      city: '商丘',
+      // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '01-28',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面
+      openUrl: 'https://baidu.com',
+      // 专属节日提醒（来自你的原配置）
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '小阳', year: '2003', date: '01-28',
-        },
+        { type: '*生日', name: '小阳', year: '2003', date: '01-28' },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '小阳', year: '2003', date: '01-28',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2022', date: '10-05',
-        },
+        { type: '生日',  name: '小阳', year: '2003', date: '01-28' },
+        { type: '节日',  name: '相识纪念日', year: '2022', date: '10-05' },
       ],
-      // 我们在一起已经有xxxx天了的配置
+      // 专属纪念日/倒数日（来自你的原配置）
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2023-05-02' },
-        // 结婚纪念日
-  
+        // 结婚纪念日（你原来为空，这里保持不填）
       ],
+      // 课程表相关配置（你未使用，置为空）
+      courseSchedule: null,
     },
     {
-      // 想要发送的人的名字
+      // 想要发送的人的名字（来自你的原配置）
       name: '自己',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      // 使用其他通道时，请严格按照各个通道的教程进行填写
       id: 'oxffX1_JavqbCnu4GqVzM0NgDZX0',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
+      // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
       useTemplateId: 'x3QJviU9qu2jUj3_V4DMXbzc6nc-ZTiy-o9jzt0jFu8',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      // 所在省份或城市（从你的全局配置沿用）
+      province: '北京',
+      // 所在城市或县区
+      city: '北京',
+      // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '07-06',
-      PROVINCE: '北京',
-      CITY: '北京',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面
+      openUrl: 'https://baidu.com',
+      // 专属节日提醒（来自你的原配置）
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '自己', year: '2003', date: '06-07',
-        },
+        { type: '*生日', name: '自己', year: '2003', date: '06-07' },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '小阳', year: '2003', date: '01-28',
-        },
-        {
-          type: '生日', name: '妈妈', year: '1988', date: '08-28',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2022', date: '10-05',
-        },
+        { type: '生日',  name: '小阳', year: '2003', date: '01-28' },
+        { type: '节日',  name: '相识纪念日', year: '2022', date: '10-05' },
       ],
-      // 我们在一起已经有xxxx天了的配置
+      // 专属纪念日/倒数日（来自你的原配置）
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day1', date: '2023-05-02' },
-        // 结婚纪念日
-  
+        // 结婚纪念日（你原来为空，这里保持不填）
       ],
+      // 课程表相关配置（你未使用，置为空）
+      courseSchedule: null,
     },
-  ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
