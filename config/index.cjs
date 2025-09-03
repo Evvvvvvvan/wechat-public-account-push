@@ -29,7 +29,7 @@ const USER_CONFIG = {
     {
       name: '自己',
       id: 'oxffX1_JavqbCnu4GqVzM0NgDZX0',
-      useTemplateId: 'x3QJviU9qu2jUj3_V4DMXbzc6nc-ZTiy-o9jzt0jFu8',
+      useTemplateId: 'y0AwWJPsSErWpCNiZ3-SNxlGXniBjbLLDjdY8TUabKo',
       province: '北京',
       city: '北京',
       horoscopeDate: '07-06',
