@@ -47,6 +47,36 @@ const USER_CONFIG = {
   
       ],
     },
+    {
+      // 想要发送的人的名字
+      name: '自己',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oxffX1_JavqbCnu4GqVzM0NgDZX0',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'x3QJviU9qu2jUj3_V4DMXbzc6nc-ZTiy-o9jzt0jFu8',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '07-06',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '自己', year: '2003', date: '06-07',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '小阳', year: '2003', date: '01-28',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2022', date: '10-05',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2023-05-02' },
+        // 结婚纪念日
+  
+      ],
+    },
   ],
 
 
