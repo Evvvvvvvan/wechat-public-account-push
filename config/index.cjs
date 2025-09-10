@@ -10,7 +10,7 @@ const USER_CONFIG = {
     {
       name: '小阳',
       id: 'oxffX15XOZ5_Fcv7fUg41XOXyix0',
-      useTemplateId: 'SUMpNToAUH5cmHxaiPCxRpuVVS2pvEZBSKuza0_NKgM',
+      useTemplateId: '5Q5x-dmpfxOCiSSG6lIuuRs6j9wfBNj-DEpvaTY-jlA',
       province: '河南',
       city: '商丘',
       horoscopeDate: '01-28',
@@ -61,7 +61,7 @@ const USER_CONFIG = {
     {
       name: '自己',
       id: 'oxffX1_JavqbCnu4GqVzM0NgDZX0',
-      useTemplateId: 'SUMpNToAUH5cmHxaiPCxRpuVVS2pvEZBSKuza0_NKgM',
+      useTemplateId: '5Q5x-dmpfxOCiSSG6lIuuRs6j9wfBNj-DEpvaTY-jlA',
       province: '北京',
       city: '北京',
       horoscopeDate: '07-06',
